@@ -4221,7 +4221,11 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 }
 
 .navbar-toggle .icon-bar+.icon-bar{
+<<<<<<< HEAD
 	margin-top:10px
+=======
+	margin-top:4px
+>>>>>>> 645a8c4be8b208a438e14c06c2b2e85223b0c90d
 }
 
 @media(min-width:768px){
