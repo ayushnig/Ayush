@@ -1,0 +1,64 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to Adminstrator Portal
+    h3 Date:#{moment(Date.now()).format('DD/MM/YYYY')}
+
+
+    // Wrapper
+    #wrapper
+
+        // PRODUCT INFO
+        #productInfo
+            h2 Product Info
+            p
+
+                strong Product Name:
+                |  <span id='productInfoName'></span>
+                br
+                strong SKU:
+                |  <span id='productInfoSKU'></span>
+                br
+                strong Amount:
+                |  <span id='productInfoAmount'></span>
+                br
+                strong Sales:
+                   <span id='productInfoSales'></span>
+                br
+                strong OrderId:
+                <span id='productInfoOrderId'></span>
+        // /PRODUCT INFO
+
+        // PRODUCT LIST
+        h2 Product List
+        #productList
+            table
+                thead
+                    th Product Name
+                    th SKU
+                    th Amount
+                    th Sales
+                    th OrderId
+                    th Delete?
+                tbody
+        // /PRODUCT LIST
+
+        // ADD Product
+        h2 Add Product
+        #addProduct
+            fieldset
+                input#inputProductName(type='text', placeholder='Product Name')
+                br
+                input#inputProductSKU(type='text', placeholder='SKU')
+                br
+                input#inputProductAmount(type='text', placeholder='Amount')
+                br
+                input#inputProductSales(type='text',placeholder='Sales')
+                br
+                input#inputProductOrderId(type='text',placeholder='OrderId')
+                br
+                button#btnAddProduct Add Product
+        // /ADD PRODUCT
+
+    // /WRAPPER
